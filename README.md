@@ -16,7 +16,7 @@
   **独家适配隐藏内容和不同平台的独有内容!**  
   **快速适配最新的绝大多数正式版和开发版!**  
 
-  <img src="KeyArt.png" alt="KeyArt" width="400px"/>
+  <img src="KeyArt.jpg" alt="KeyArt" width="400px"/>
 
 </div>
 
