@@ -1,5 +1,5 @@
 name: 错误反馈
-description: 反馈你发现的错误
+description: 反馈你在项目中发现的翻译、显示或其他问题
 title: "[错误]: "
 labels: [ "错误" ]
 
@@ -7,86 +7,136 @@ body:
   - type: markdown
     attributes:
       value: |
-        ## 感谢你愿意向我们反馈问题!
-        ## 以下是一些注意事项,请务必阅读让我们能够更容易处理
-
-        ### 确定没有相同或类似的Issue已被提出.
-        ### 确定你在下方填写的信息是准确无误的.
-        ### 如果你不知道如何有效且精准地表述,我们强烈建议你先阅读[《提问的智慧》](https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/main/README-zh_CN.md).
-
+        ## 感谢你愿意向我们反馈问题！
+        
+        为了方便我们定位和处理问题，请在提交前确认以下事项：
+        
+        ### 请先搜索现有的 Issue 和 Pull Request，确认没有相同或类似的问题。
+        ### 请尽可能准确、完整地填写下方信息。
+        ### 如果你不确定如何描述问题，请阅读 [《提问的智慧》](https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/main/README-zh_CN.md)。
+        
         ---
 
   - type: checkboxes
     id: terms
     attributes:
-      label: 请确保你已阅读以上注意事项,然后勾选下方的确认框.
+      label: 提交前确认
       options:
-        - label: 我已经确认过该问题不是个人使用/操作不规范导致的,而是仓库文件中的代码错误导致的.
+        - label: 我已经确认该问题不是由于个人使用方式或操作不当造成的。
           required: true
-        - label: 我已经在 [Issue Tracker](https://github.com/Spectrollay/mclang_cn/issues) 以及 [Pull Request](https://github.com/Spectrollay/mclang_cn/pulls) 中找过我要反馈的问题,没有找到相同或类似的Issue和以及解决了相关或类似问题的PR.
+        - label: 我已经在 [Issue](https://github.com/Minecraft-Kit/mclang_cn/issues) 和 [Pull Request](https://github.com/Minecraft-Kit/mclang_cn/pulls) 中搜索过，没有找到相同或类似的问题。
           required: true
-        - label: 我已知晓并同意,本处仅用于反馈发现的问题,否则请在 [这里](https://github.com/Spectrollay/mclang_cn/issues/new/choose) 选择合适的模板.若该Issue是关于其他内容则可能会被无条件自动关闭或/并锁定.
+        - label: 我确认本 Issue 的内容属于错误反馈。如果是建议、咨询或其他类型的问题，我会选择合适的模板提交。
           required: true
-        - label: 我已知晓并同意,如果我不按照模板提供的指示进行填写,则该Issue可能会被无条件删除.
+        - label: 我已知晓，如果没有按照模板要求提供必要信息，该 Issue 可能会被要求补充信息、关闭或删除。
           required: true
 
   - type: dropdown
     id: error_type
     attributes:
       label: 错误类型
-      description: 选择你发现的错误是哪种类型的
+      description: 请选择你发现的问题类型。
       options:
         - 翻译错误
         - 显示错误
-        - 运行错误
-        - 其他(请在下方说明)
+        - 资源包错误
+        - 其他
     validations:
       required: true
 
   - type: input
     id: error_type_other
     attributes:
-      label: 一句话描述你发现的错误类型(当上方勾选了'其他'时)
+      label: 其他错误类型
+      description: 如果上方选择了「其他」，请简单说明具体类型。
+      placeholder: 例如：启用资源包会导致某个模组的语言显示混乱
+    validations:
+      required: false
+
+  - type: input
+    id: version
+    attributes:
+      label: 游戏版本
+      description: 请填写出现问题的 Minecraft 版本。
+      placeholder: 例如：26.x
+    validations:
+      required: true
+
+  - type: input
+    id: platform
+    attributes:
+      label: 游戏平台
+      description: 请填写出现问题的平台。
+      placeholder: 例如：Android / Windows / iOS
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: 问题描述
+      description: |
+        请详细描述你发现的问题，并尽可能提供能够帮助我们定位问题的信息。
+        
+        如果是翻译问题，请提供出现问题的原文和当前译文。
+        如果是显示或资源包问题，请描述具体的操作步骤和实际表现。
+      placeholder: |
+        原文：
+        当前译文：
+        
+        问题：
+        ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: 你认为的正确内容
+      description: |
+        如果是翻译问题，请填写你认为更合适的译文。
+        如果是其他问题，请描述你认为应该出现的正确结果或修复方式。
+      placeholder: |
+        建议译文：
+        ...
+        
+        或：
+        
+        预期结果：
+        ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: 相关截图
+      description: 如果方便，请提供能够体现问题的游戏截图、语言文件截图或其他相关图片。
     validations:
       required: false
 
   - type: textarea
-    id: original_content
-    attributes:
-      label: 发生错误的位置
-      description: |
-        可以是代码位置/运行截图等能体现出问题的内容
-        请注意:越详细的描述越能帮助我们更好定位到问题,相应的也更容易被修复
-    validations:
-      required: true
-
-  - type: textarea
-    id: fixed_content
-    attributes:
-      label: 你认为的正确内容
-      description: |
-        如果为翻译错误请在此贴出正确的翻译
-        其他情况请在此留下预期行为和修复意见
-    validations:
-      required: true
-
-  - type: textarea
     id: logging
     attributes:
-      label: |
-        (可选)错误日志
-        如果有输出错误日志可以在此贴出
+      label: 错误日志
+      description: 如果问题产生了错误日志，可以在这里提供。
+      render: text
+    validations:
+      required: false
 
   - type: textarea
-    id: extra-desc
+    id: extra
     attributes:
-      label: (可选)补充说明
+      label: 补充说明
+      description: 如果还有其他需要说明的内容，可以在这里补充。
+    validations:
+      required: false
 
   - type: input
     id: name
     attributes:
       label: 你的名称
-      description: (可选)用于可能的贡献展示
+      description: 选填，用于后续贡献展示。可留空。
     validations:
       required: false
 
@@ -94,7 +144,7 @@ body:
     id: email
     attributes:
       label: 联系邮箱
-      description: (可选)用于可能的贡献展示
+      description: 选填，仅用于可能的进一步沟通。可留空。
     validations:
       required: false
 
@@ -102,4 +152,7 @@ body:
     attributes:
       value: |
         ---
-        ## 感谢你的反馈!我们稍后将评估你的反馈并向你返回评估结果.
+        
+        ## 感谢你的反馈！
+        
+        我们会在确认问题后进行处理。如果需要补充信息，我们可能会在 Issue 中留言。

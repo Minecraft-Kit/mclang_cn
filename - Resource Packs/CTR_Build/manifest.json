@@ -1,7 +1,7 @@
 {
 	"format_version": 2,
 	"header": {
-		"description": "§6请将本资源包置于全局资源顶部\n模块版本： 2026.9.3 | 适配版本： 26.60.24\n作者： Spectrollay | Minecraft Kit开发团队§r",
+		"description": "§6请将本资源包置于全局资源顶部\n模块版本： 2026.9.3 | 适配版本： 26.60.24\n作者： Spectrollay | Minecraft Kit 开发团队§r",
 		"name": "§e中文译名修正包§r",
 		"uuid": "7a613ccc-40b2-75da-8e7f-7f4e5ee69dcb",
 		"version": [2026,9,3],
@@ -17,7 +17,7 @@
 	"settings": [
 		{
 			"type": "label",
-			"text": "§6本资源包为基岩版工具包子模块\n\n功能： 修正基岩版的离谱翻译§r\n\n发布：\n   - 基岩版工具包  https://github.com/Minecraft-Kit\n   - 中文译名修正  https://github.com/Spectrollay/mclang_cn\n\n§cCC BY-NC-SA 4.0 Licensed | © 2020 Spectrollay§r"
+			"text": "§6本资源包为基岩版工具包子模块\n\n功能： 修正基岩版的离谱翻译§r\n\n发布：\n   - 基岩版工具包  https://github.com/Minecraft-Kit\n   - 中文译名修正  https://github.com/Minecraft-Kit/mclang_cn\n\n§cCC BY-NC-SA 4.0 Licensed | © 2020 Spectrollay§r"
 		} /*,
 		{
 			"type": "step_slider",
@@ -67,6 +67,6 @@
 	"metadata": {
 		"authors": ["Spectrollay"],
 		"license": "CC BY-NC-SA 4.0",
-		"url": "https://spectrollay.github.io/mclang_cn"
+		"url": "https://kit.minecraft.spectrollay.com/mclang_cn/"
 	}
 }

@@ -1,47 +1,60 @@
 name: 其他反馈
-description: 其他任何关于项目的咨询或反馈
+description: 提出其他问题、咨询或项目相关反馈
 title: "[反馈]: "
 
 body:
   - type: markdown
     attributes:
       value: |
-        ## 感谢你能够向我们提出反馈!
-        ## 以下是一些注意事项,请务必阅读让我们能够更容易处理
-
-        ### 确定没有相同或类似的Issue已被提出.
-        ### 确定现有的PR和Issue没有与该反馈相同或类似的内容.
-        ### 如果你不知道如何有效且精准地表述,我们建议强烈建议你先阅读[《提问的智慧》](https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/main/README-zh_CN.md).
-
+        ## 感谢你愿意向我们反馈！
+        
+        在提交之前，请先确认：
+        
+        ### 请先搜索现有的 Issue 和 Pull Request，确认没有相同或类似的内容。
+        ### 请尽可能清楚、完整地描述你的问题或想法。
+        ### 如果你不确定如何描述问题，请阅读 [《提问的智慧》](https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/main/README-zh_CN.md)。
+        
         ---
 
   - type: checkboxes
     id: terms
     attributes:
-      label: 请确保你已阅读以上注意事项,然后勾选下方的确认框.
+      label: 提交前确认
       options:
-        - label: 我已经确认过该问题不是个人使用/操作不规范导致的,而是仓库文件中的代码错误导致的.
+        - label: 我已经确认这个问题不属于「错误反馈」或「提出建议」模板的范围。
           required: true
-        - label: 我已经在 [Issue Tracker](https://github.com/Spectrollay/minecraft_repository_test/issues) 以及 [Pull Request](https://github.com/Spectrollay/minecraft_repository_test/pulls) 中找过我要提出的反馈,没有找到相同或类似的Issue和PR.
+        - label: 我已经在 [Issue](https://github.com/Minecraft-Kit/mclang_cn/issues) 和 [Pull Request](https://github.com/Minecraft-Kit/mclang_cn/pulls) 中搜索过，没有找到相同或类似的内容。
           required: true
-        - label: 我已知晓并同意, [这里](https://github.com/Spectrollay/minecraft_repository_test/issues/new/choose) 并没有合适的其他模板以进行反馈,否则请选择对应的反馈模板进行反馈.
+        - label: 我确认本 Issue 的内容与本项目有关。
           required: true
-        - label: 我已知晓并同意,如果我不按照模板提供的指示进行填写,该Issue可能会被无条件自动关闭或/并锁定甚至被删除.
+        - label: 我已知晓，如果没有按照模板要求提供必要信息，该 Issue 可能会被要求补充信息、关闭或删除。
           required: true
 
   - type: textarea
     id: description
     attributes:
       label: 内容描述
-      placeholder: 请在此输入你想要反馈的内容...
+      description: 请详细描述你想要反馈、咨询或讨论的内容。
+      placeholder: |
+        请在这里输入你的内容...
+        
+        如果涉及具体版本、平台或游戏文本，也请一并说明。
     validations:
       required: true
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: 补充说明
+      description: 如果还有其他需要说明的内容，可以在这里补充。
+    validations:
+      required: false
 
   - type: input
     id: name
     attributes:
       label: 你的名称
-      description: (可选)用于可能的贡献展示
+      description: 选填，用于后续贡献展示。可留空。
     validations:
       required: false
 
@@ -49,7 +62,7 @@ body:
     id: email
     attributes:
       label: 联系邮箱
-      description: (可选)用于可能的贡献展示
+      description: 选填，仅用于可能的进一步沟通。可留空。
     validations:
       required: false
 
@@ -57,4 +70,7 @@ body:
     attributes:
       value: |
         ---
-        ## 感谢你的反馈!我们稍后将评估你的反馈并向你返回评估结果.
+        
+        ## 感谢你的反馈！
+        
+        我们会在确认内容后进行处理。如果需要补充信息，我们可能会在 Issue 中留言。

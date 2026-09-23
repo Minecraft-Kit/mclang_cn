@@ -1,5 +1,5 @@
 name: 提出建议
-description: 提出你的宝贵想法
+description: 提出你对项目内容、翻译或维护方式的改进建议
 title: "[建议]: "
 labels: [ "改进" ]
 
@@ -7,62 +7,88 @@ body:
   - type: markdown
     attributes:
       value: |
-        ## 感谢你能够向我们提出你的建议!
-        ## 以下是一些注意事项,请务必阅读让我们能够更容易处理
-
-        ### 确定没有相同或类似的Issue已被提出.
-        ### 确定现有的PR和代码并没有和该建议相同或类似的方法.
-        ### 如果你不知道如何有效且精准地表述,我们建议强烈建议你先阅读[《提问的智慧》](https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/main/README-zh_CN.md).
-
+        ## 感谢你愿意向我们提出建议！
+        
+        无论是对翻译内容、术语、项目功能还是维护方式有想法，都欢迎提出。
+        
+        在提交之前，请先确认：
+        
+        ### 请先搜索现有的 Issue 和 Pull Request，确认没有相同或类似的建议。
+        ### 请尽可能说明你的建议、理由以及预期效果。
+        ### 如果你不确定如何描述问题，请阅读 [《提问的智慧》](https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/main/README-zh_CN.md)。
+        
         ---
 
   - type: checkboxes
     id: terms
     attributes:
-      label: 请确保你已阅读以上注意事项,然后勾选下方的确认框.
+      label: 提交前确认
       options:
-        - label: 我确认这个建议是有依据的且有改进意义的.
+        - label: 我确认这个建议与项目有关，并且确实有提出或讨论的必要。
           required: true
-        - label: 我已经在 [Issue Tracker](https://github.com/Spectrollay/minecraft_repository_test/issues) 以及 [Pull Request](https://github.com/Spectrollay/minecraft_repository_test/pulls) 中找过我要提出的建议,没有找到相同或类似的Issue和PR.
+        - label: 我已经在 [Issue](https://github.com/Minecraft-Kit/mclang_cn/issues) 和 [Pull Request](https://github.com/Minecraft-Kit/mclang_cn/pulls) 中搜索过，没有找到相同或类似的建议。
           required: true
-        - label: 我已知晓并同意,本处仅用于已有内容的建议,否则请在 [这里](https://github.com/Spectrollay/minecraft_repository_test/issues/new/choose) 选择合适的模板.若该Issue是关于其他内容则可能会被无条件自动关闭或/并锁定.
+        - label: 我确认本 Issue 的内容属于建议，而不是单纯的错误反馈或问题咨询。
           required: true
-        - label: 我已知晓并同意,如果我不按照模板提供的指示进行填写,则该Issue可能会被无条件删除.
+        - label: 我已知晓，如果没有按照模板要求提供必要信息，该 Issue 可能会被要求补充信息、关闭或删除。
           required: true
 
   - type: input
-    id: suggestion-title
+    id: suggestion_title
     attributes:
-      label: 标题
-      description: 用一句话简要概述你的建议
+      label: 建议概述
+      description: 请用一句话简要概括你的建议。
+      placeholder: 例如：统一某个术语在不同位置的中文翻译
     validations:
       required: true
 
   - type: textarea
     id: current_content
     attributes:
-      label: 当前内容
+      label: 当前情况
       description: |
-        当前的内容在哪里存在问题?
-        如果能定位到具体代码位置请一起贴出
+        请说明目前的情况，以及你认为存在什么问题。
+        
+        如果涉及具体的游戏文本、页面内容或项目文件，请尽可能提供具体位置。
+      placeholder: |
+        当前情况：
+        ...
+        
+        存在的问题：
+        ...
     validations:
       required: true
 
   - type: textarea
     id: suggested_content
     attributes:
-      label: 改进意见
+      label: 改进建议
       description: |
-        你认为怎么修改会更好?
-        你提出这个建议的依据是什么?
+        请说明你希望如何修改，以及为什么这样修改。
+        
+        如果是翻译相关建议，可以直接提供建议译文。
+      placeholder: |
+        建议修改为：
+        ...
+        
+        修改理由：
+        ...
     validations:
       required: true
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: 补充说明
+      description: 如果还有相关截图、参考资料或其他需要说明的内容，可以在这里补充。
+    validations:
+      required: false
 
   - type: input
     id: name
     attributes:
       label: 你的名称
-      description: (可选)用于可能的贡献展示
+      description: 选填，用于后续贡献展示。可留空。
     validations:
       required: false
 
@@ -70,7 +96,7 @@ body:
     id: email
     attributes:
       label: 联系邮箱
-      description: (可选)用于可能的贡献展示
+      description: 选填，仅用于在需要进一步沟通时联系你。可留空。
     validations:
       required: false
 
@@ -78,4 +104,8 @@ body:
     attributes:
       value: |
         ---
-        ## 感谢你的建议!我们稍后将评估你的提议并向你返回评估结果.
+        
+        ## 感谢你的建议！
+        
+        我们会结合实际情况进行讨论和处理。如果需要进一步了解你的想法，我们可能会在 Issue 中留言。
+
