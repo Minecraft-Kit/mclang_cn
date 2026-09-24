@@ -64,13 +64,13 @@
 
 > 适用于正式版的稳定更新。具体适配版本及更新内容请参阅对应的发布说明。
 
-下载： [GitHub](https://github.com/Minecraft-Kit/mclang_cn/releases/latest) | [Gitee](https://gitee.com/Minecraft-Kit/mclang_cn/releases/latest) | [Gitea](https://gitea.com/Minecraft-Kit/mclang_cn/releases/latest) | [项目官方网盘](https://pan.huang1111.cn/s/E74A7Fb)
+下载： [GitHub](https://github.com/Minecraft-Kit/mclang_cn/releases/latest) | [Gitee](https://gitee.com/Spectrollay/mclang_cn/releases) | [Gitea](https://gitea.com/Spectrollay/mclang_cn/releases/latest) | [项目官方网盘](https://pan.huang1111.cn/s/E74A7Fb)
 
 ![最新版](https://img.shields.io/github/v/release/Minecraft-Kit/mclang_cn?include_prereleases&style=for-the-badge&label=最新版) ![发布于](https://img.shields.io/github/release-date-pre/Minecraft-Kit/mclang_cn?style=for-the-badge&label=发布于)
 
 > 包含正式版及预览版发布。预览版主要用于测试开发版适配以及语言包自身的更新，可能会不大稳定。
 
-下载： [GitHub](https://github.com/Minecraft-Kit/mclang_cn/releases) | [Gitee](https://gitee.com/Minecraft-Kit/mclang_cn/releases) | [Gitea](https://gitea.com/Minecraft-Kit/mclang_cn/releases) | [项目官方网盘](https://pan.huang1111.cn/s/E74A7Fb)
+下载： [GitHub](https://github.com/Minecraft-Kit/mclang_cn/releases) | [Gitee](https://gitee.com/Spectrollay/mclang_cn/releases) | [Gitea](https://gitea.com/Spectrollay/mclang_cn/releases) | [项目官方网盘](https://pan.huang1111.cn/s/E74A7Fb)
 
 ---
 
