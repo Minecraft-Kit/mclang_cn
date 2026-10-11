@@ -16,7 +16,7 @@ jobs:
 
       - name: Mirror to Gitea
         env:
-          GITEA_TOKEN : ${{secrets.GITEA_TOKEN}}
+          GITEA_TOKEN: ${{ secrets.GITEA_TOKEN }}
         run: |
           REMOTE_URL="https://Spectrollay:${GITEA_TOKEN}@gitea.com/Spectrollay/mclang_cn.git"
           git remote add gitea "$REMOTE_URL"

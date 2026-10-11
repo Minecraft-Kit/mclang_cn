@@ -2,10 +2,10 @@ blank_issues_enabled: false
 contact_links:
   - name: Telegram 群组
     url: https://t.me/spectrollay_workshop
-    about: 个人交流群
+    about: 开发者个人交流群
   - name: QQ 群组
     url: https://qm.qq.com/q/AqLmKLH9mM
-    about: 个人交流群
-  - name: 云湖群组
+    about: 开发者个人交流群
+  - name: 云湖群组（已弃用）
     url: https://yhfx.jwznb.com/share?key=VyTE7W7sLwRl&ts=1684642802
-    about: 个人交流群（已弃用）
+    about: 原有交流群，现已停止使用
