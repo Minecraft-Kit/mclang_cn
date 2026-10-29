@@ -59,10 +59,10 @@ CTR_xxx_xxx/
 
 **Android**
 
-| 存储路径                     | 资源包目录示例                                                                       |
-|:-----------------------------|:-------------------------------------------------------------------------------------|
+| 存储路径     | 资源包目录示例                                                                       |
+|:-------------|:-------------------------------------------------------------------------------------|
 | 内部存储路径 | `/data/user/0/com.mojang.minecraftpe/games/com.mojang/resource_packs/`               |
-| 外部存储路径                 | `/sdcard/Android/data/com.mojang.minecraftpe/files/games/com.mojang/resource_packs/` |
+| 外部存储路径 | `/sdcard/Android/data/com.mojang.minecraftpe/files/games/com.mojang/resource_packs/` |
 
 部分修改版安装包可能使用不同的包名，例如`com.mojang.minecraftbe`；此时需要按照实际包名调整路径。Android新版系统可能限制访问`Android/data`，而`/data/user/0`通常也无法由普通文件管理器直接访问。
 
